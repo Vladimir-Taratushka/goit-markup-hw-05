@@ -22,36 +22,24 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  height: 80px;
   width: 1170px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-links {
   display: flex;
   margin-left: 93px;
-  margin-bottom: 0px;
 }
+
 .nav-links a {
-  display: block;
-  align-items: flex-end;
   color: #212121;
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-}
-.nav-links > li ::after {
-  display: block;
-  content: "";
-  width: inherit;
-  height: 4px;
-  border-radius: 2px;
-  background: black;
-}
-.nav-links > li :hover ::after {
-  background: #2196f3;
 }
 .nav-links > li {
   margin-right: 50px;
@@ -174,17 +162,24 @@ main {
   height: 70px;
   margin: auto;
 }
+.container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .dignities {
   display: flex;
   justify-content: center;
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.dignities :not(:last-child) {
+.dignities > li {
   margin-right: 30px;
+}
+.dignities :last-child {
+  margin-right: 0px;
 }
 .dignities p {
   text-align: left;
@@ -206,6 +201,7 @@ main {
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 94px;
 }
 .head2 {
   text-align: center;
@@ -223,72 +219,45 @@ main {
   margin-top: 0px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 94px;
   width: 1170px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 .box1 {
   margin-right: 30px;
-  position: relative;
-  height: 294px;
+  height: 294px; position: relative;
 }
 .box2 {
   margin-right: 30px;
-  position: relative;
+ position: relative;
   height: 294px;
 }
 .box3 {
   position: relative;
   height: 294px;
 }
-.apps1 {
-  display: flex;
+
+.apps1, .apps2,.apps3 {
+  position:absolute;
+  bottom: 0;
   width: 370px;
-  height: 70px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+  height:70px ;
   background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
-  /*padding-top: 27px;
-  padding-bottom: 27px;*/
-  position: absolute;
-  bottom: 0px;
-}
-.apps2 {
-  width: 370px;
-  height: 70px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  color:#ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  text-transform:uppercase ;
+  margin-block-start: 0;
+  margin-block-end: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  position: absolute;
-  bottom: 0px;
-}
-.apps3 {
-  width: 370px;
-  height: 70px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  position: absolute;
-  bottom: 0px;
+
+
 }
 /*Our team */
 .our-team {
@@ -306,7 +275,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
@@ -403,10 +371,9 @@ main {
 /* Постоянные клиенты */
 .clients {
   width: 1170px;
-  height: 182px;
   margin: auto;
-  margin-top: 134px;
-  margin-bottom: 54px;
+  padding-top: 134px;
+  padding-bottom: 54px;
   align-items: center;
   justify-content: center;
 }
@@ -534,7 +501,14 @@ footer {
   font-style: normal;
   font-size: 14px;
 }
+.foot-contacts :not(:last-child) {
+  padding-bottom: 9px;
+}
+
 .foot-contacts {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top: 20px;
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
   font-size: 14px;
@@ -582,13 +556,15 @@ footer {
   width: 1170px;
   justify-content: center;
   margin: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .portfolio-buttons {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   padding-inline-start: 0px;
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 .portfolio-buttons :not(:last-child) {
   margin-right: 8px;
@@ -657,10 +633,11 @@ footer {
   border-radius: 4px;
 }
 /*potfolio photo*/
-.container {
+.container-portfolio {
   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 94px;
 }
 .portfolio-photo {
   display: flex;
@@ -668,9 +645,7 @@ footer {
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 94px;
   margin-block-start: 0px;
-  margin-bottom: 94px;
   width: 1170px;
 }
 .portfolio-photo :nth-child(3n + 3) {
@@ -687,7 +662,7 @@ footer {
 }
 .portfolio-list {
   width: 370px;
-  height: 404p;
+  /* height: 404px;*/
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -698,10 +673,10 @@ footer {
 }
 .portfolio-links {
   display: block;
-  max-width: 100%;
+  width: 370px;
   height: auto;
   padding-bottom: 20px;
-  height: 404px;
+  /*height: 404px;*/
 }
 .portfolio-links:hover,
 .portfolio-links:focus {
@@ -713,8 +688,9 @@ footer {
   height: 404px;
 }
 .link-description {
+  margin-block-start: 0;
+  margin-block-end: 0;
   margin-left: 24px;
-  margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
   color: #212121;
@@ -726,7 +702,56 @@ footer {
   font-weight: 400;
   color: #757575;
 }
-/*Всплывающие окна*/
-.explanation {
-  display: none;
+.card-text {
+  width: 100%;
+  padding-top: 20px;
 }
+
+/*Всплывающие окна*/
+.explanation::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explanation {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+  width: 322px;
+  height: 168px;
+  color: #ffffff;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  transform: translateY(250px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-links:hover .text {
+  transform: translateY(0);
+}
+.portfolio-links:hover ::before {
+  transform: translateY(0);
+}
+.portfolio-links:focus .text {
+  transform: translateY(0);
+}
+.portfolio-links:focus ::before {
+  transform: translateY(0);
