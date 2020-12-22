@@ -72,9 +72,6 @@ header {
   color: #2196f3;
   opacity: 1;
 }
-.nav-links a: {
-  color: #2196f3;
-}
 .nav-links > li {
   margin-right: 50px;
 }
