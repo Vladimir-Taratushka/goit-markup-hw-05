@@ -16,7 +16,7 @@
         <nav class="main-nav">
              <img src="./images/WebStudio.png" alt="logo">    
             <ul class="nav-links">
-                <li><a href="index.html"> Студия </a></li>
+                <li id="portfolio-studio"><a href="index.html"> Студия </a></li>
                 <li><a href="portfolio.html">Портфолио </a></li>
                 <li><a href="#contacts"> Контакты</a></li>
             </ul>
@@ -41,13 +41,19 @@
         <section class="efective-solution">
             <h1>Эффективные решения <br> для вашего бизнеса</h1>
             <button class="order-service" data-modal-open >Заказать услугу</button>
-            <div class="backdrop is-hidden"data-modal>
-                <div class="modal">
-                    <button class="close-btn" data-modal-close>Закрыть модалку</button>
-                </div>
-
+            <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="close-btn" data-modal-close>
+                                <svg class="svg-close">
+                                    <use href="../images/icons/symbol.svg#icon-Vector-1"></use>
+                                </svg>
+                            </button>
+                        </div>
             </div>
         </section>
+        
+        
+        
         <div class="container">
             <ul class="dignities">
                 <li>
